@@ -10,21 +10,11 @@ my.settings <- list(
   strip.border=list(col="black")
 )
 
+KSAge <- read.csv("https://raw.githubusercontent.com/zshan458/Project/master/KSAge.csv", stringsAsFactors = FALSE)
+KSGender <-  read.csv ("https://raw.githubusercontent.com/zshan458/Project/master/KSGender.csv", stringsAsFactors = FALSE)
+KSRace <- read.csv ("https://raw.githubusercontent.com/zshan458/Project/master/KSRace.csv")
+KSElection <- read.csv("https://raw.githubusercontent.com/zshan458/Project/master/KSElection3.csv")
 
-#setwd("C:/Users/Zeeshan/Documents/Data Science/CSCI84/Project/Data")
-#KSAge <- read.csv (file="KSAge.csv", header=TRUE, sep=",")
-#KSGender <-  read.csv (file="KSGender.csv", header=TRUE, sep=",")
-#KSRace <- read.csv (file="KSRace.csv", header=TRUE, sep=",")
-#KSElection <- read.csv(file="KSElection3.csv", header=TRUE, sep=",")
-#save(KSElection, file="KSElection.RData")
-#save(KSAge, file="KSAge.RData")
-#save(KSGender, file="KSGender.RData")
-#save(KSRace, file="KSRace.RData")
-
-load("KSElection.RData")
-load("KSAge.RData")
-load("KSGender.RData")
-load("KSRace.RData")
 ###############################
 # Bar graph for Age 
 ###############################
